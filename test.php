@@ -207,6 +207,35 @@
 
 
 
+<!--INSERT USER DROPDOWN-->
+<p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#adduser" aria-expanded="false" aria-controls="adduser">
+        Add User
+    </button>
+</p>
+<div class="collapse" id="adduser">
+    <div class="card card-body">
+        <form action="Insert_Profile.php" method="post">
+            Email: <input type="text" name="Email"><br>
+            Firstname: <input type="text" name="Firstname"><br>
+            Lastname: <input type="text" name="Lastname"><br>
+            Password: <input type="text" name="Password"><br>
+            Type: <input type="text" name="Type"><br>
+            Username: <input type="text" name="Username"><br>
+            Mobile_number: <input type="text" name="Mobile_number"><br>
+            Join_date(Ex:2019-04-26): <input type="text" name="Join_date"><br>
+            Profile_id: <input type="text" name="profile_id"><br>
+
+            <input type="submit">
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
 
 
 <b>HTML HERE</b>
