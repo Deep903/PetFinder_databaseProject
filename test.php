@@ -90,16 +90,16 @@
 
 
         //PRINT Animals DATABASE
-        $query = "SELECT * FROM animal";
+        $query = "SELECT * FROM adoptions";
         $val = mysqli_query($db, $query);
 
-        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | <br/>";
-        printf($mask, 'Availability', "Posted Date", "Color", "Type", "Name", "Description", "Age", "Breed", "Size", "Animal_id");
+        $mask = "| %.20s | %.20s | %.20s | %.20s | <br/>";
+        printf($mask, 'fee', "Date", "Adopting_user_id", "adopted_animal_id");
 
         while($r=mysqli_fetch_row($val)) {
             //printf($r[0]." ".$r[1]." ".$r[2]." ".$r[3]." ".$r[4]." ".$r[5]." ".$r[6]." ".$r[7]." ".$r[8]." "."<br/>");
             //printf("%-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   <br/>", $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8]);
-            printf($mask, $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8], $r[9]);
+            printf($mask, $r[0], $r[1], $r[2], $r[3]);
         }
         //DONE PRINTING Adoptions DATABASE
         ?>
@@ -123,16 +123,16 @@
 
 
         //PRINT Animals DATABASE
-        $query = "SELECT * FROM animal";
+        $query = "SELECT * FROM likes";
         $val = mysqli_query($db, $query);
 
-        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | <br/>";
-        printf($mask, 'Availability', "Posted Date", "Color", "Type", "Name", "Description", "Age", "Breed", "Size", "Animal_id");
+        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | <br/>";
+        printf($mask, 'date', "comment", "like_user_id", "like_animal_id", "Like_id");
 
         while($r=mysqli_fetch_row($val)) {
             //printf($r[0]." ".$r[1]." ".$r[2]." ".$r[3]." ".$r[4]." ".$r[5]." ".$r[6]." ".$r[7]." ".$r[8]." "."<br/>");
             //printf("%-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   <br/>", $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8]);
-            printf($mask, $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8], $r[9]);
+            printf($mask, $r[0], $r[1], $r[2], $r[3], $r[4]);
         }
         //DONE PRINTING Likes DATABASE
         ?>
@@ -156,16 +156,16 @@
 
 
         //PRINT Animals DATABASE
-        $query = "SELECT * FROM animal";
+        $query = "SELECT * FROM donations";
         $val = mysqli_query($db, $query);
 
-        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | <br/>";
-        printf($mask, 'Availability', "Posted Date", "Color", "Type", "Name", "Description", "Age", "Breed", "Size", "Animal_id");
+        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | <br/>";
+        printf($mask, 'amount', "purpose", "date", "donate_animal_id", "donate_user_id", "donation_id");
 
         while($r=mysqli_fetch_row($val)) {
             //printf($r[0]." ".$r[1]." ".$r[2]." ".$r[3]." ".$r[4]." ".$r[5]." ".$r[6]." ".$r[7]." ".$r[8]." "."<br/>");
             //printf("%-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   <br/>", $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8]);
-            printf($mask, $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8], $r[9]);
+            printf($mask, $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6]);
         }
         //DONE PRINTING DONATIONs DATABASE
         ?>
@@ -189,16 +189,16 @@
 
 
         //PRINT Animals DATABASE
-        $query = "SELECT * FROM animal";
+        $query = "SELECT * FROM inquiry";
         $val = mysqli_query($db, $query);
 
-        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | <br/>";
-        printf($mask, 'Availability', "Posted Date", "Color", "Type", "Name", "Description", "Age", "Breed", "Size", "Animal_id");
+        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | <br/>";
+        printf($mask, 'Question', "Date", "Answer", "Inquiry_user_id", "Inquiry_admin_id");
 
         while($r=mysqli_fetch_row($val)) {
             //printf($r[0]." ".$r[1]." ".$r[2]." ".$r[3]." ".$r[4]." ".$r[5]." ".$r[6]." ".$r[7]." ".$r[8]." "."<br/>");
             //printf("%-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   <br/>", $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8]);
-            printf($mask, $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8], $r[9]);
+            printf($mask, $r[0], $r[1], $r[2], $r[3], $r[4]);
         }
         //DONE PRINTING Inquiries DATABASE
         ?>
