@@ -15,7 +15,7 @@ Inserting...
     $nine = $_POST["profile_id"];
 
 //INSERT USER
-    $query = "INSERT INTO profile VALUES ('$one', '$two', '$three', '$four', '$five', '$six', $seven, '$eight', $nine)";
+    $query = "INSERT INTO profile VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine')";
     $val = mysqli_query($db, $query);
     echo mysqli_error($db);
 /*INSERT INTO `profile` (`Email`, `Fname`, `Lname`, `Password`, `Type`, `Username`, `Mobile_number`, `Join_date`, `profile_id`) VALUES ('One@gmail.com', 'FirstOne', 'LastOne', 'OnePass', 'Admin', 'OneUserName', '1111111111', '2019-04-26', '1'); */

@@ -1,7 +1,42 @@
+<html>
+<body>
+Deleting...
 <?php
-/**
- * Created by PhpStorm.
- * User: deepp
- * Date: 4/29/2019
- * Time: 5:24 PM
- */
+$db = new mysqli('localhost','root','','animal shelter');
+
+//DELETE
+$query = "DELETE FROM profile ";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+//DELETE
+$query = "DELETE FROM animal ";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+//DELETE
+$query = "DELETE FROM adoptions ";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+//DELETE
+$query = "DELETE FROM likes ";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+//DELETE
+$query = "DELETE FROM donations ";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+//DELETE
+$query = "DELETE FROM inquiry ";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+?><br>
+
+Complete
+</body>
+</html>

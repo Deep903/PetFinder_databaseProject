@@ -62,14 +62,14 @@
         $query = "SELECT * FROM animal";
         $val = mysqli_query($db, $query);
 
-        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | %.20s | <br/>";
+        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | %s | %.20s | %.20s | %.20s | %.20s | <br/>";
         printf($mask, 'Availability', "Posted Date", "Color", "Type", "Name", "Description", "Age", "Breed", "Size", "Animal_id");
 
         while($r=mysqli_fetch_row($val)) {
             //printf($r[0]." ".$r[1]." ".$r[2]." ".$r[3]." ".$r[4]." ".$r[5]." ".$r[6]." ".$r[7]." ".$r[8]." "."<br/>");
             //printf("%-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   %-20s   <br/>", $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8]);
             printf($mask, $r[0], $r[1], $r[2], $r[3], $r[4], $r[5], $r[6], $r[7], $r[8], $r[9]);
-        }
+        }1
         //DONE PRINTING Animals DATABASE
         ?>
     </div>
