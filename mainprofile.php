@@ -231,7 +231,22 @@
     </div>
 </div>
 
+<!-- INSERT SAMPLE DATA-->
+<p>
+<form action="Insert_Samples.php">
 
+    <button type="submit">Insert Sample Data</button>
+</form>
+</p>
+
+
+<!-- DELETE ALL DATA-->
+<p>
+<form action="Delete_All.php">
+
+    <button type="submit">Delete Sample Data</button>
+</form>
+</p>
 
 
 
