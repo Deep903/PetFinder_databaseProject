@@ -313,17 +313,6 @@ if($five == $adminType || $five == $admintype) {
 
 //INSERT ANIMAL SAMPLES NOW--------------------------------------------------------------------
 
-$bird = 'bird';
-$cat = 'cat';
-$horse = 'horse';
-$dog = 'dog';
-$other = 'other';
-$rodent = 'rodent';
-
-
-
-
-
 
 $one = "1";
 $two = "2019-04-06";
@@ -339,7 +328,7 @@ $ten = "1001"; //------------------------------------UNIQUE
 //Adopted information
 $eleven = "100";
 $twelve = "2019-05-05";
-$thirteen = "1001";
+$thirteen = "1004";
 $fourteen = $ten;
 
 
@@ -353,14 +342,14 @@ $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
 
-//$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
-//$val = mysqli_query($db, $query);
-//echo mysqli_error($db);
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
 
 
 
 
-$one = "0";
+$one = "1";
 $two = "2019-04-06";
 $three = "brown";
 $four = "dog";
@@ -371,6 +360,13 @@ $eight = "german shepherd";
 $nine = "large";
 $ten = "1002"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "230";
+$twelve = "2019-05-10";
+$thirteen = "1010";
+$fourteen = $ten;
+
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
@@ -380,8 +376,12 @@ $query = "INSERT INTO $four VALUES ('$ten', '0')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
 
-$one = "0";
+
+$one = "1";
 $two = "2019-04-09";
 $three = "green";
 $four = "bird";
@@ -392,6 +392,13 @@ $eight = "parrot";
 $nine = "small";
 $ten = "1004"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "23";
+$twelve = "2019-05-01";
+$thirteen = "1006";
+$fourteen = $ten;
+
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
@@ -401,8 +408,11 @@ $query = "INSERT INTO $four VALUES ('$ten', '1')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
 
-$one = "0";
+$one = "1";
 $two = "2019-04-08";
 $three = "yellow";
 $four = "dog";
@@ -413,6 +423,13 @@ $eight = "golden retriever";
 $nine = "small";
 $ten = "1003"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "50";
+$twelve = "2019-06-15";
+$thirteen = "1008";
+$fourteen = $ten;
+
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
@@ -422,9 +439,12 @@ $query = "INSERT INTO $four VALUES ('$ten', '0')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
 
 
-$one = "0";
+$one = "1";
 $two = "2019-04-10";
 $three = "brown";
 $four = "horse";
@@ -435,6 +455,12 @@ $eight = "friesian";
 $nine = "large";
 $ten = "1005"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "55";
+$twelve = "2019-06-16";
+$thirteen = "1003";
+$fourteen = $ten;
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
@@ -445,9 +471,12 @@ $query = "INSERT INTO $four VALUES ('$ten', '0')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
 
 
-$one = "0";
+$one = "1";
 $two = "2019-04-10";
 $three = "black";
 $four = "dog";
@@ -458,6 +487,12 @@ $eight = "bulldog";
 $nine = "small";
 $ten = "1006"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "532";
+$twelve = "2019-06-18";
+$thirteen = "1003";
+$fourteen = $ten;
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
@@ -467,9 +502,12 @@ $query = "INSERT INTO $four VALUES ('$ten', '1')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
 
 
-$one = "0";
+$one = "1";
 $two = "2019-04-11";
 $three = "white";
 $four = "dog";
@@ -480,6 +518,12 @@ $eight = "siberian husky";
 $nine = "medium";
 $ten = "1007"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "1";
+$twelve = "2019-06-25";
+$thirteen = "1004";
+$fourteen = $ten;
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
@@ -489,10 +533,12 @@ $query = "INSERT INTO $four VALUES ('$ten', '0')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
 
 
-
-$one = "0";
+$one = "1";
 $two = "2019-04-22";
 $three = "black";
 $four = "dog";
@@ -503,6 +549,12 @@ $eight = "siberian husky";
 $nine = "medium";
 $ten = "1008"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "31";
+$twelve = "2019-05-03";
+$thirteen = "1007";
+$fourteen = $ten;
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
@@ -512,8 +564,14 @@ $query = "INSERT INTO $four VALUES ('$ten', '1')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
 
-$one = "0";
+
+
+
+$one = "1";
 $two = "2019-04-14";
 $three = "white";
 $four = "bird";
@@ -524,6 +582,12 @@ $eight = "duck";
 $nine = "small";
 $ten = "1009"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "53";
+$twelve = "2019-05-23";
+$thirteen = "1004";
+$fourteen = $ten;
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
@@ -533,8 +597,15 @@ $query = "INSERT INTO $four VALUES ('$ten', '0')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
 
-$one = "0";
+
+
+
+
+$one = "1";
 $two = "2019-04-14";
 $three = "green";
 $four = "other";
@@ -545,6 +616,13 @@ $eight = "Venus flytrap";
 $nine = "small";
 $ten = "1010"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "63";
+$twelve = "2019-05-24";
+$thirteen = "1007";
+$fourteen = $ten;
+
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
@@ -553,6 +631,12 @@ echo mysqli_error($db);
 $query = "INSERT INTO $four VALUES ('$ten', '1')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
+
+$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
 
 
 
