@@ -24,7 +24,7 @@
 <div class="collapse" id="Profiles">
     <div class="card card-body">
         <?php
-        $db = new mysqli('localhost','root','','animal shelter');
+        $db = new mysqli('localhost','root','','animal_shelter');
 
 
 
@@ -54,7 +54,7 @@
 <div class="collapse" id="Animals">
     <div class="card card-body">
         <?php
-        $db = new mysqli('localhost','root','','animal shelter');
+        $db = new mysqli('localhost','root','','animal_shelter');
 
 
 
@@ -85,7 +85,7 @@
 <div class="collapse" id="ADOPTIONS">
     <div class="card card-body">
         <?php
-        $db = new mysqli('localhost','root','','animal shelter');
+        $db = new mysqli('localhost','root','','animal_shelter');
 
 
 
@@ -118,7 +118,7 @@
 <div class="collapse" id="LIKEs">
     <div class="card card-body">
         <?php
-        $db = new mysqli('localhost','root','','animal shelter');
+        $db = new mysqli('localhost','root','','animal_shelter');
 
 
 
@@ -151,7 +151,7 @@
 <div class="collapse" id="DONATIONs">
     <div class="card card-body">
         <?php
-        $db = new mysqli('localhost','root','','animal shelter');
+        $db = new mysqli('localhost','root','','animal_shelter');
 
 
 
@@ -184,15 +184,15 @@
 <div class="collapse" id="Inquiries">
     <div class="card card-body">
         <?php
-        $db = new mysqli('localhost','root','','animal shelter');
+        $db = new mysqli('localhost','root','','animal_shelter');
 
 
 
-        //PRINT Animals DATABASE
+        //PRINT inquieries DATABASE
         $query = "SELECT * FROM inquiry";
         $val = mysqli_query($db, $query);
 
-        $mask = "| %.20s | %.20s | %.20s | %.20s | %.20s | <br/>";
+        $mask = "| %s | %s | %s | %s | %s | <br/>";
         printf($mask, 'Question', "Date", "Answer", "Inquiry_user_id", "Inquiry_admin_id");
 
         while($r=mysqli_fetch_row($val)) {

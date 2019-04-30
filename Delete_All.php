@@ -2,7 +2,7 @@
 <body>
 Deleting...
 <?php
-$db = new mysqli('localhost','root','','animal shelter');
+$db = new mysqli('localhost','root','','animal_shelter');
 
 //DELETE
 $query = "DELETE FROM profile ";

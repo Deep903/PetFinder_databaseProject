@@ -7,7 +7,7 @@ $userType = 'User';
 $admintype = 'admin';
 $adminType = 'Admin';
 
-    $db = new mysqli('localhost','root','','animal shelter');
+    $db = new mysqli('localhost','root','','animal_shelter');
 
     $one = $_POST["Email"];
     $two = $_POST["Firstname"];

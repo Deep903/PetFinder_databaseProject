@@ -8,7 +8,7 @@ $userType = 'User';
 $admintype = 'admin';
 $adminType = 'Admin';
 
-$db = new mysqli('localhost','root','','animal shelter');
+$db = new mysqli('localhost','root','','animal_shelter');
 
 $one = "example@gamil.com"; //------------------------------------UNIQUE
 $two = "Hy";
@@ -851,6 +851,166 @@ echo mysqli_error($db);
 $query = "INSERT INTO $four VALUES ('$ten', '1')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
+
+
+
+
+
+//INSERT INQUIRY -------------------------------------------------------------------
+
+
+
+
+$one = "Do you currently have any Dolphins?";
+$two = "2019-04-23";
+$three = "No, sorry.";
+$four = "1003";
+$five = "1001";
+$six = "1001";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+$one = "Do you currently have any Dogs?";
+$two = "2019-04-23";
+$three = "Yes, we have a number of dogs available.";
+$four = "1003";
+$five = "1001";
+$six = "1002";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+$one = "Is animal 1001 available?";
+$two = "2019-04-23";
+$three = "Sorry, that animal has been adopted.";
+$four = "1004";
+$six = "1003";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+$one = "Is animal 1002 available?";
+$two = "2019-04-23";
+$three = "Sorry, that animal has been adopted.";
+$four = "1004";
+$five = "1001";
+$six = "1004";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+$one = "Is animal 1003 good with cats?";
+$two = "2019-03-11";
+$three = "Yes, they are great with cats!";
+$four = "1005";
+$six = "1005";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+
+$one = "Is animal 1004 good with cats?";
+$two = "2019-11-23";
+$three = "No, they are terrible with cats!";
+$four = "1005";
+$five = "1002";
+$six = "1006";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+$one = "Does animal 1005 have any health problems?";
+$two = "2019-03-23";
+$three = "No, they are perfectly healthy.";
+$four = "1006";
+$five = "1002";
+$six = "1007";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+$one = "Does animal 1006 have any health problems?";
+$two = "2019-05-13";
+$three = "No, they are perfectly healthy.";
+$four = "1006";
+$five = "1002";
+$six = "1008";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+$one = "Does animal 1006 have any health problems?";
+$two = "2019-04-14";
+$three = "No, they are perfectly healthy.";
+$four = "1007";
+$five = "1002";
+$six = "1009";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+$one = "Does animal 1006 have any health problems?";
+$two = "2019-04-13";
+$three = "No, they are perfectly healthy.";
+$four = "1006";
+$five = "1002";
+$six = "1010";
+//INSERT Animal
+$query = "INSERT INTO inquiry VALUES ('$one', '$two', '$three', '$four', '$five', '$six')";
+$val = mysqli_query($db, $query);
+echo mysqli_error($db);
+
+
+
+
+
+//INSERT DONATIONS -------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ?><br>
