@@ -18,12 +18,12 @@ $ten = $_POST["Last"];
 $eleven = $_POST["Last2"];
 
 //INSERT USER
-$query = "INSERT INTO profile VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten ')";
+$query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten ')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
 
-$query = "INSERT INTO $five VALUES ('$nine', '$eleven')";
+$query = "INSERT INTO $four VALUES ('$ten', '$eleven')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 

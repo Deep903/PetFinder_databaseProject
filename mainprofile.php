@@ -242,7 +242,7 @@
     <div class="card card-body">
         <form action="Insert_Animal.php" method="post">
             Availability(0 or 1): <input type="text" name="Email"><br>
-            Posted_date)Ex:2019-04-26): <input type="text" name="Firstname"><br>
+            Posted_date(Ex:2019-04-26): <input type="text" name="Firstname"><br>
             Color: <input type="text" name="Lastname"><br>
             Type: <input type="text" name="Password"><br>
             Name: <input type="text" name="Type"><br>
