@@ -2,6 +2,12 @@
 <body>
 Inserting...
 <?php
+
+$usertype = 'user';
+$userType = 'User';
+$admintype = 'admin';
+$adminType = 'Admin';
+
 $db = new mysqli('localhost','root','','animal shelter');
 
 $one = "example@gamil.com"; //------------------------------------UNIQUE
@@ -20,6 +26,19 @@ $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
 
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+
 
 $one = "example@yahoo.com"; //------------------------------------UNIQUE
 $two = "Deep";
@@ -35,6 +54,18 @@ $nine = "1002"; //------------------------------------UNIQUE
 $query = "INSERT INTO profile VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$phone', '$eight', '$nine')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
+
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
 
 
 
@@ -54,6 +85,17 @@ $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
 
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
 
 
 $one = "jake@gmail.com"; //------------------------------------UNIQUE
@@ -71,6 +113,18 @@ $query = "INSERT INTO profile VALUES ('$one', '$two', '$three', '$four', '$five'
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
 
 
 
@@ -90,6 +144,18 @@ $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
 
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
 
 
 $one = "fakegmail@gmail.com"; //------------------------------------UNIQUE
@@ -107,6 +173,17 @@ $query = "INSERT INTO profile VALUES ('$one', '$two', '$three', '$four', '$five'
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
 
 
 
@@ -129,6 +206,17 @@ $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
 
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
 
 
 
@@ -147,6 +235,18 @@ $query = "INSERT INTO profile VALUES ('$one', '$two', '$three', '$four', '$five'
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
+
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
 
 
 
@@ -168,6 +268,18 @@ echo mysqli_error($db);
 
 
 
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
 
 
 $one = "yowza@gmail.com"; //------------------------------------UNIQUE
@@ -186,6 +298,18 @@ $val = mysqli_query($db, $query);
 echo mysqli_error($db);
 
 
+if($five == $userType || $five == $usertype) {
+    $query = "INSERT INTO user VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
+if($five == $adminType || $five == $admintype) {
+    $query = "INSERT INTO admin VALUES ('$nine')";
+    $val = mysqli_query($db, $query);
+    echo mysqli_error($db);
+}
+
 
 //INSERT ANIMAL SAMPLES NOW--------------------------------------------------------------------
 
@@ -196,7 +320,7 @@ echo mysqli_error($db);
 
 
 
-$one = "0";
+$one = "1";
 $two = "2019-04-06";
 $three = "yellow";
 $four = "cat";
@@ -207,10 +331,23 @@ $eight = "tabby";
 $nine = "medium";
 $ten = "1001"; //------------------------------------UNIQUE
 
+//Adopted information
+$eleven = "100";
+$twelve = "2019-05-05";
+$thirteen = "1001";
+$fourteen = $ten;
+
+
 //INSERT Animal
 $query = "INSERT INTO animal VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten')";
 $val = mysqli_query($db, $query);
 echo mysqli_error($db);
+
+//$query = "INSERT INTO adoptions VALUES ('$eleven', '$twelve', '$thirteen', '$fourteen')";
+//$val = mysqli_query($db, $query);
+//echo mysqli_error($db);
+
+
 
 
 $one = "0";
