@@ -231,6 +231,36 @@
     </div>
 </div>
 
+
+<!--INSERT Animal DROPDOWN-->
+<p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#addanimal" aria-expanded="false" aria-controls="addanimal">
+        Add Animal
+    </button>
+</p>
+<div class="collapse" id="addanimal">
+    <div class="card card-body">
+        <form action="Insert_Animal.php" method="post">
+            Availability(0 or 1): <input type="text" name="Email"><br>
+            Posted_date)Ex:2019-04-26): <input type="text" name="Firstname"><br>
+            Color: <input type="text" name="Lastname"><br>
+            Type: <input type="text" name="Password"><br>
+            Name: <input type="text" name="Type"><br>
+            Description: <input type="text" name="Username"><br>
+            Age: <input type="text" name="Mobile_number"><br>
+            Breed: <input type="text" name="Join_date"><br>
+            Size: <input type="text" name="profile_id"><br>
+            Animal_id: <input type="text" name="Last"><br>
+            Animal_quirk(0 or 1): <input type="text" name="Last2"><br>
+
+            <input type="submit">
+        </form>
+    </div>
+</div>
+
+
+
+
 <!-- INSERT SAMPLE DATA-->
 <p>
 <form action="Insert_Samples.php">
