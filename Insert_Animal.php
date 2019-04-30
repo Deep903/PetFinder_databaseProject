@@ -15,7 +15,7 @@ $seven = $_POST["Mobile_number"];
 $eight = $_POST["Join_date"];
 $nine = $_POST["profile_id"];
 $ten = $_POST["Last"];
-$eleven $_POST["Last2"];
+$eleven = $_POST["Last2"];
 
 //INSERT USER
 $query = "INSERT INTO profile VALUES ('$one', '$two', '$three', '$four', '$five', '$six', '$seven', '$eight', '$nine', '$ten ')";
