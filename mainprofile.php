@@ -260,6 +260,27 @@
 
 
 
+<!--DELETE Animal DROPDOWN-->
+<p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#removeanimal" aria-expanded="false" aria-controls="removeanimal">
+        Remove Animal
+    </button>
+</p>
+<div class="collapse" id="removeanimal">
+    <div class="card card-body">
+        <form action="Remove_Animal.php" method="post">
+            Animal_id: <input type="text" name="Email"><br>
+
+            <input type="submit">
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
 
 <!-- INSERT SAMPLE DATA-->
 <p>
