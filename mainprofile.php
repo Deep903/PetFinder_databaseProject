@@ -304,7 +304,7 @@
 
 
 
-<b>HTML HERE</b>
+
 
 <?php
 //MORE PHP HERE
